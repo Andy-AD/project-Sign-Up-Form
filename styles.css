@@ -23,7 +23,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    min-width: 30vw;
     height: 100vh;
     background-image: url('images/daniel-roe-lpjb_UMOyx8-unsplash.jpg');
     background-position: center;
@@ -58,13 +59,13 @@ body {
 
 .reference {
     padding: 10px;
+    text-align: center;
 }
 
 .reference a {
-    text-decoration: none;
-    color: darkblue;
+    color: black
 }
 
 .reference a:visited {
-    color: darkblue;
+    color: black;
 }
