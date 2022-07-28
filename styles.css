@@ -2,9 +2,9 @@
     font-family: 'minotaurphatte';
     src: url('fonts/minotaur-webfont.eot');
     src: url('fonts/minotaur-webfont.eot') format('embedded-opentype'),
-         url('fonts/minotaur-webfont.woff') format('woff'),
-         url('fonts/minotaur-webfont.ttf') format('truetype'),
-         url('fonts/minotaur-webfont.svg') format('svg');
+        url('fonts/minotaur-webfont.woff') format('woff'),
+        url('fonts/minotaur-webfont.ttf') format('truetype'),
+        url('fonts/minotaur-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -94,18 +94,26 @@ body {
     width: 45%;
 }
 
-.form-row input {
+input {
     border-radius: 5px;
     width: 250px;
     font-size: 18px;
-    border: 2px solid  rgb(233, 240, 243);
+    border: 2px solid rgb(233, 240, 243);
     padding: 4px 10px;
 }
 
+input:focus,
+button:focus,
+.log-in:focus {
+    outline: none;
+    border: 2px solid rgb(52, 113, 117);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .form-row label {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
-    color:  rgb(26, 57, 59);
+    color: rgb(26, 57, 59);
 }
 
 .form-container button {
@@ -120,7 +128,8 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.form-container button:focus, button:hover {
+.form-container button:focus,
+button:hover {
     background-color: rgb(52, 113, 117);
 }
 
@@ -147,4 +156,15 @@ button:hover {
     color: rgb(78, 165, 172);
     font-weight: 600;
     text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.no-match {
+    border: 1px red solid;
+}
+
+.validity {
+    color: red;
+    font-size: 12px;
 }
