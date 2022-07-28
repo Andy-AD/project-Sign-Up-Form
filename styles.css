@@ -59,6 +59,7 @@ body {
     flex-grow: 2;
     background-color: rgb(233, 240, 243);
     height: 100vh;
+    padding: auto;
 }
 
 .reference {
@@ -165,7 +166,7 @@ button:hover {
     border-radius: 3px;
 }
 
-.no-match {
+.error {
     border: 1px red solid;
 }
 

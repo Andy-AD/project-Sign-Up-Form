@@ -16,14 +16,14 @@ form.addEventListener('submit', (event) => {
 });
 
 function addNoMatchPasswordAction() {
-    confirmPassword.classList.add('no-match');
-    password.classList.add('no-match');
+    confirmPassword.classList.add('error');
+    password.classList.add('error');
     passwordValidity.textContent = "*Passwords do not match"
 
 }
 
 function removeNoMatchPasswordAction() {
-    password.classList.remove('no-match');
-    confirmPassword.classList.remove('no-match');
+    password.classList.remove('error');
+    confirmPassword.classList.remove('error');
     passwordValidity.textContent = '';
 }
