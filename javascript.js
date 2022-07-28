@@ -9,7 +9,6 @@ confirmPassword.addEventListener('input', removeNoMatchPasswordAction);
 
 
 form.addEventListener('submit', (event) => {
-    console.log(form.elements[5].value !== form.elements[4].value);
     if (form.elements[5].value !== form.elements[4].value) {
         addNoMatchPasswordAction();
         event.preventDefault();        
